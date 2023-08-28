@@ -1,0 +1,40 @@
+@import "../../variables";
+
+@mixin Button {
+  border-style: none;
+  width: max-content;
+  box-sizing: border-box;
+  height: 36px;
+  cursor: pointer;
+  gap: 6px;
+  padding: 6px 12px;
+  display: flex;
+  justify-content: center;
+  transition: all 200ms !important;
+  border: 1px solid;
+  align-items: center;
+  filter: brightness(100%);
+  &:hover,
+  &:focus {
+    filter: brightness(95%);
+  }
+
+  &:active {
+    filter: brightness(85%);
+  }
+}
+
+.dvs-button {
+  &--PRIMARY {
+    @include Button();
+  }
+  &--SECONDARY {
+    @include Button();
+  }
+  &--TERTIARY {
+    @include Button();
+  }
+  &--full {
+    width: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+.dvs-logo {
+  width: max-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+
+  &--l {
+    height: 36px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #020318;
+    border-radius: 6px;
+    color: #f8fafc;
+  }
+
+  &--r {
+    font-weight: 500;
+  }
+}

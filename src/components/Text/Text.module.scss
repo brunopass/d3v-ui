@@ -1,0 +1,28 @@
+@import "../../variables";
+@mixin text {
+  margin: 0;
+  padding: 0;
+}
+.dvs-text {
+  &--h1 {
+    @include text();
+  }
+  &--h2 {
+    @include text();
+  }
+  &--h3 {
+    @include text();
+  }
+  &--h4 {
+    @include text();
+  }
+  &--h5 {
+    @include text();
+  }
+  &--h6 {
+    @include text();
+  }
+  &--p {
+    @include text();
+  }
+}
